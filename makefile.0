@@ -1,0 +1,12 @@
+all : Nbody.out
+	./Nbody.out 1000 0.01
+
+Nbody.out : Nbody_final.c
+	gcc Nbody_final.c -lm -fopenmp -o Nbody.out
+
+
+
+
+
+
+
